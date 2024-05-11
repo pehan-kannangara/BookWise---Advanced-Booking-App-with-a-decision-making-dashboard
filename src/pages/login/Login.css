@@ -1,0 +1,57 @@
+.login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #0071c2, #00bcd4); /* Added gradient background */
+}
+
+.lContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increased spacing between elements */
+  padding: 20px;
+  border-radius: 8px; /* Smooth rounded corners */
+  background: white; /* White background for form */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.lInput {
+  height: 40px; /* Slightly larger input */
+  padding: 10px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  transition: all 0.3s; /* Smooth transition for animations */
+}
+
+.lInput:focus {
+  border-color: #0071c2; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 113, 194, 0.5); /* Add glow on focus */
+}
+
+.lButton {
+  border: none;
+  padding: 10px 20px;
+  background-color: #0071c2; /* Original color */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  transition: all 0.3s; /* Smooth transition for hover effects */
+}
+
+.lButton:hover {
+  background-color: #005fa3; /* Darken background on hover */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.lButton:disabled {
+  background-color: #0071c28c; /* Lighter color when disabled */
+  cursor: not-allowed;
+  opacity: 0.5; /* Reduced opacity for disabled state */
+}
+
+.login .lError {
+  color: red; /* Highlight error messages */
+  font-size: 14px; /* Consistent with other text */
+}
